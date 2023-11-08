@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="icon" href="./images/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/59f32f0541.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <nav>
+        <img src="images/logo.png" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="container">
+        <div class="header-text">
+          <p>Front-end Development</p>
+          <h1>
+            Hi, I'm <span>Lily</span> <br />
+            Adam From US
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- /*------------ About ------------*/ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              mollitia unde voluptatum officiis odit aperiam consequuntur
+              numquam? Aperiam, dolorem officia rerum ipsa sed sit unde fugiat,
+              reiciendis numquam, omnis asperiores.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing web/App interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Andriod/IOS apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021 - Current</span><br />UI/UX Design Training at ET
+                  Institute.
+                </li>
+                <li><span>2019 - 2021</span><br />Team Lead at StarApp LLC.</li>
+                <li>
+                  <span>2017 - 2019</span><br />UI/UX Design Executive at Coin
+                  Digital Ltd.
+                </li>
+                <li>
+                  <span>2016 - 2017</span><br />Intership at ekart ecommerce.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2016</span><br />UI/UX Design Training at ET Institute.
+                </li>
+                <li><span>2016</span><br />MBA from MIT Bangalore.</li>
+                <li><span>2014</span><br />BBA from ISM Bangalore.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /*------------ Services ------------*/ -->
+    <div id="services">
+      <div class="card"></div>
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div class="card">
+            <i class="fas fa-code"></i>
+            <div class="content">
+              <h2>Web Design</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+                reprehenderit reiciendis similique sunt eos illo obcaecati
+                possimus, asperiores cum numquam. Possimus quisquam obcaecati
+                assumenda id, maxime libero illum quasi recusandae nesciunt
+                iusto amet fuga harum velit eaque neque doloremque unde ex
+                veniam repudiandae. Iusto officiis cum ducimus aperiam suscipit
+                deserunt praesentium nam? Quaerat, tempore sequi!
+              </p>
+            </div>
+            <a class="more"></a>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-crop-alt"></i>
+            <div class="content">
+              <h2>UI/Ux Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Delectus, ipsum officia exercitationem incidunt perferendis
+                laborum, repellendus dolore vel, esse unde nulla optio quas cum
+                at aut est reprehenderit rem amet. Recusandae, nobis quibusdam
+                incidunt magni soluta sunt architecto, natus praesentium nam,
+                saepe explicabo. Cum vitae omnis assumenda laborum voluptatibus
+                repudiandae cupiditate deserunt? Officia, debitis tenetur.
+              </p>
+            </div>
+            <a class="more"></a>
+          </div>
+          <div class="card">
+            <i class="fab fa-app-store"></i>
+            <div class="content">
+              <h2>App Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                numquam itaque quia corrupti nihil, odit tempore ratione nostrum
+                hic doloribus deleniti labore id voluptates debitis quis veniam,
+                repellendus ipsam tempora similique. Non fuga voluptates
+                repellendus, optio itaque, sequi eum corrupti eligendi, nesciunt
+                delectus veniam rerum ut eveniet assumenda vel. Quos facere
+                eaque maiores deleniti pariatur!
+              </p>
+            </div>
+            <a class="more"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /*------------ Portfolio ------------*/ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <div class="image">
+              <img src="images/work-1.png" />
+            </div>
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae repudiandae eveniet corporis.
+              </p>
+              <a href="/portfolio/work-details.html"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <div class="image">
+              <img src="images/work-2.png" />
+            </div>
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae repudiandae eveniet corporis.
+              </p>
+              <a href="/portfolio/work-details.html"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <div class="image">
+              <img src="images/work-3.png" />
+            </div>
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae repudiandae eveniet corporis.
+              </p>
+              <a href="/portfolio/work-details.html"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <div class="image">
+              <img src="images/work-1.png" />
+            </div>
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae repudiandae eveniet corporis.
+              </p>
+              <a href="/portfolio/work-details.html"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <div class="image">
+              <img src="images/work-2.png" />
+            </div>
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae repudiandae eveniet corporis.
+              </p>
+              <a href="/portfolio/work-details.html"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <div class="image">
+              <img src="images/work-3.png" />
+            </div>
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae repudiandae eveniet corporis.
+              </p>
+              <a href="/portfolio/work-details.html"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a class="btn loadmore">See more</a>
+      </div>
+    </div>
+
+    <!-- /*------------ Contact ------------*/ -->
+    <div id="contact">
+      <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="row">
+          <div class="contact-left">
+            <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
+            <p><i class="fas fa-phone-square-alt"></i> 0123456789</p>
+            <div class="social-icons">
+              <a href="www.facebook.com"><i class="fab fa-facebook"></i></a>
+              <a href="www.x.com"><i class="fab fa-twitter-square"></i></a>
+              <a href="www.instagram"><i class="fab fa-instagram"></i></a>
+              <a href="www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" placeholder="Your Name" name="Name" required />
+              <input
+                type="email"
+                placeholder="Your Email"
+                name="Email"
+                required
+              />
+              <textarea
+                name="Message"
+                placeholder="Your Message"
+                rows="6"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Fatima. Made with <i class="fas fa-heart"></i> by Fatima
+          AL-Bazi
+        </p>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".image").slice(0, 3).fadeIn();
+        $(".loadmore").click(function () {
+          $(".image").slice(0, 6).fadeIn();
+          $(this).fadeOut();
+        });
+      });
+    </script>
+    <script src="/portfolio/main.js"></script>
+  </body>
+</html>
